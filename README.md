@@ -1,4 +1,4 @@
-jungle-juice
+Jungle Juice
 ============
 
 This is a gem intended to help out with traversing the various directories of a ruby project.

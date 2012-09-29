@@ -9,12 +9,17 @@ module JungleJuice
     end
 
     def method_missing(method_name)
-      @current_dir = @current_dir.join(method_name)
+      @current_dir = @current_dir.join(method_name.to_s)
       self
     end
 
-    def[](end_file_name)
-      @current_dir.join(end_file_name.to_s)
+    def[](file_name)
+      @current_dir = @current_dir.join(file_name.to_s)
+      self
+    end
+
+    def to_s
+      @current_dir.to_s
     end
   end
 end
