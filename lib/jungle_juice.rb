@@ -1,3 +1,4 @@
+require 'jungle_juice/version'
 require 'pathname'
 
 module JungleJuice
